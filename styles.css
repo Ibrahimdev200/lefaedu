@@ -1,0 +1,368 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Playfair Display', serif;
+    text-align: justify;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px; /* Set maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+header {
+    background-color: rgb(13, 17, 40);
+    color: #fff;
+    position: fixed;
+   
+    display: flex;
+    justify-content: space-between; /* Align items to opposite sides */
+    align-items: center; /* Align items vertically */
+    padding: 20px 0;
+   /* Change font family */
+    font-size: 24px;
+}
+
+/* Add this CSS to your existing stylesheet */
+
+.center-text {
+    text-align: center;
+}
+
+.center-text h1 {
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+
+.logo {
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block; /* Display menu inline */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 20px; /* Add spacing between menu items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ccc; /* Change color on hover */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex; /* Use flexbox for menu items */
+}
+
+nav ul li {
+    
+    margin-left: 50px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin from last menu item */
+}
+
+nav ul li:first-child {
+    margin-right: 20px; /* Remove margin from last menu item */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+    padding: 10px 20px; /* Added padding to the menu items */
+}
+
+nav ul li a:hover {
+    background-color: rgb(253, 95, 0); /* Background color change on hover */
+}
+
+.logo {
+    font-weight: bold;
+    color: rgb(253, 95, 0);
+    
+}
+
+.download-btn {
+    display: flex; /* Use flexbox for button container */
+    align-items: center; /* Center button vertically */
+}
+
+/* Add this CSS to your existing stylesheet */
+
+.download-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.download-item {
+    flex: 0 0 48%; /* Adjust width as needed */
+}
+
+.download-item h2 {
+    margin-top: 0; /* Remove default margin */
+    margin-bottom: 10px; /* Add spacing between title and button */
+}
+
+.download-item .btn {
+    display: block; /* Make button full width */
+}
+
+/* Add this CSS to your existing stylesheet */
+
+.download-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.download-item {
+    flex: 0 0 48%; /* Adjust width as needed */
+}
+
+.download-item h2 {
+    margin-top: 0; /* Remove default margin */
+    margin-bottom: 10px; /* Add spacing between title and button */
+}
+
+.download-item .btn {
+    display: block; /* Make button full width */
+}
+
+/* Add this CSS to your existing stylesheet */
+
+/* Add this CSS to your existing stylesheet */
+
+.contact-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgb(253, 95, 0);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.contact-info {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info strong {
+    font-weight: bold;
+}
+
+/* Button hover animation */
+.btn:hover {
+    background-color: green;
+}
+
+section {
+    padding: 50px;
+}
+
+footer {
+   
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Video container */
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    width: 45%;
+    height: 300px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.exam-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.exam-item {
+    text-align: center;
+    flex: 0 0 45%; /* Adjust width of each exam item */
+    margin-bottom: 30px;
+}
+
+.exam-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.exam-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.exam-buttons button {
+    background-color: rgb(253, 95, 0);
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.exam-buttons button:hover {
+    background-color: green;
+}
+ hr{
+color: rgb(13, 17, 40);
+height: 1rem;
+background-color: rgb(13, 17, 40);
+margin: 5rem;
+ }
+
+ #frontage {
+    /* Set the background image */
+    background-image: url(img/background.jpg);
+    
+    /* Set background size to cover the entire section */
+    background-size: cover;
+    
+    /* Set background position to center */
+    background-position: center;
+    
+    /* Add some padding for better readability */
+    padding: 50px;
+    
+    /* Add additional styles as needed */
+    background-attachment: fixed;
+    
+    /* Set height to 100vh for full viewport height */
+    height: 100vh;
+     /* Set the background image with linear gradient overlay */
+     background-image: linear-gradient(rgba(253, 97, 0, 0.801), rgba(13, 17, 40, 0.801)), url(img/background.jpg);
+    
+     /* Set background size to cover the entire section */
+     background-size: cover;
+     
+     /* Set background position to center */
+     background-position: center;
+     
+     /* Set background attachment to fixed to keep the image fixed while scrolling */
+     background-attachment: fixed;
+     
+     /* Set height to 100vh for full viewport height */
+     height: 100vh;
+}
+
+/* Additional styles for the content inside the #fontage section */
+#frontage h2 {
+    color: white; /* Example text color */
+}
+#frontage p {
+    color: white; /* Example text color */
+}
+
+
+.span{
+    color: rgb(13, 17, 40);
+    font-size: large;
+    font-weight: bold;
+}
