@@ -1,170 +1,212 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Basic styling */
+/* General styles */
 body {
     font-family: 'Playfair Display', serif;
-    text-align: justify;
     background-color: #f8f8f8;
     color: #333;
+    background-color: darkgray;
     line-height: 1.6;
 }
 
 .container {
-    max-width: 1200px; /* Set maximum width for the container */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 0 20px; /* Add padding to the sides */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-
-header {
-    background-color: rgb(13, 17, 40);
-    color: #fff;
-    position: fixed;
-   
-    display: flex;
-    justify-content: space-between; /* Align items to opposite sides */
-    align-items: center; /* Align items vertically */
-    padding: 20px 0;
-   /* Change font family */
-    font-size: 20px;
-}
-
-/* Add this CSS to your existing stylesheet */
-
-.center-text {
-    text-align: center;
-}
-
-.center-text h1 {
-    margin-bottom: 20px; /* Add space below the heading */
-}
-
 
 .logo {
     font-weight: bold;
+    color: rgb(253, 95, 0); /* Change to your desired color */
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: auto; 
 }
 
-nav ul {
-    list-style: none;
-    display: inline-block; /* Display menu inline */
-}
 
-nav ul li {
-    display: inline;
-}
-
-nav ul li:not(:last-child) {
-    margin-right: 20px; /* Add spacing between menu items */
-}
-
-nav ul li a {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(13, 17, 40);
     color: #fff;
-    text-decoration: none;
+    padding: 15px 20px;
 }
-
-nav ul li a:hover {
-    color: #ccc; /* Change color on hover */
-}
-
 
 nav ul {
     list-style: none;
-    display: flex; /* Use flexbox for menu items */
+    display: flex;
 }
 
 nav ul li {
-    
-    margin-left: 50px;
-}
-
-nav ul li:last-child {
-    margin-right: 0; /* Remove margin from last menu item */
+    margin-left: 20px;
 }
 
 nav ul li:first-child {
-    margin-right: 20px; /* Remove margin from last menu item */
+    margin-left: 0; /* Remove margin from the first menu item */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s ease; /* Transition for hover effect */
-    padding: 10px 20px; /* Added padding to the menu items */
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
 }
 
 nav ul li a:hover {
-    background-color: rgb(253, 95, 0); /* Background color change on hover */
+    background-color: rgb(253, 95, 0);
 }
 
-.logo {
-    font-weight: bold;
-    color: rgb(253, 95, 0);
-    font-size: 30px;
-    
-}
 
-.download-btn {
-    display: flex; /* Use flexbox for button container */
-    align-items: center; /* Center button vertically */
-}
 
-/* Add this CSS to your existing stylesheet */
 
-.download-section {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
 
-.download-item {
-    flex: 0 0 48%; /* Adjust width as needed */
-}
 
-.download-item h2 {
-    margin-top: 0; /* Remove default margin */
-    margin-bottom: 10px; /* Add spacing between title and button */
-}
 
-.download-item .btn {
-    display: block; /* Make button full width */
-}
-
-/* Add this CSS to your existing stylesheet */
-
-.download-section {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.download-item {
-    flex: 0 0 48%; /* Adjust width as needed */
-}
-
-.download-item h2 {
-    margin-top: 0; /* Remove default margin */
-    margin-bottom: 10px; /* Add spacing between title and button */
-}
-
-.download-item .btn {
-    display: block; /* Make button full width */
-}
-
-/* Add this CSS to your existing stylesheet */
-
-/* Add this CSS to your existing stylesheet */
-
-.contact-section {
-    margin-top: 50px;
+/* Frontage section */
+.frontage-section {
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Change to your desired color */
+    padding: 100px 0; /* Adjust spacing as needed */
     text-align: center;
 }
 
-.contact-section h2 {
+.frontage-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.frontage-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Change to your desired color */
+    color: #fff; /* Change to your desired color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    .frontage-section h1 {
+        font-size: 28px;
+    }
+
+    .frontage-section p {
+        font-size: 16px;
+    }
+}
+
+
+
+/* About section */
+#about {
+    padding: 50px 0;
+}
+
+.heading {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+   
+    background-color: #333; /* Change to your desired color */
+    color: #fff; /* Change to your desired color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Style for download buttons section */
+#download {
+    /* Orange background color */
+    color:rgb(13, 17, 40);
+    text-align: center;
+    padding: 50px 0;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-buttons a {
+    display: inline-block;
+    background-color: orange; /* Orange background color */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-buttons a:hover {
+    background-color: green; /* Green background color on hover */
+}
+
+/* Style for partner logos section */
+#partners {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner-logos img {
+    margin: 0 20px;
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Media query for all screens */
+@media screen {
+    /* Add styles for all screens here */
+}
+
+/* Media query for mobile phones of all sizes */
+@media screen and (max-width: 767px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+}
+
+
+/* Contact section */
+#contact {
+    padding: 50px 0;
+}
+
+.heading {
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
@@ -199,7 +241,7 @@ nav ul li a:hover {
 
 .btn {
     display: inline-block;
-    background-color: rgb(253, 95, 0);
+    background-color: #333;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -208,15 +250,20 @@ nav ul li a:hover {
     font-weight: bold;
     border: none;
     cursor: pointer;
-    margin-left: 20px;
 }
 
 .btn:hover {
     background-color: #555;
 }
 
+hr {
+    color: #ccc;
+    height: 1px;
+    background-color: #ccc;
+    margin: 40px 0;
+}
+
 .contact-info {
-    margin-top: 20px;
     line-height: 1.6;
 }
 
@@ -233,45 +280,78 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-/* Button hover animation */
-.btn:hover {
-    background-color: green;
+/* Media query for all screens */
+@media screen {
+    /* Add styles for all screens here */
 }
 
-section {
-    padding: 50px;
+/* Media query for mobile phones of all sizes */
+@media screen and (max-width: 767px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
 }
 
-footer {
-   
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
-}
 
-/* Video container */
-.video-container {
+/* Video section */
+/* Style for the video section */
+/* Style for the video section */
+#videos {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.video-container iframe {
-    width: 45%;
-    height: 300px;
-}
-
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.container h2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
     text-align: center;
+    padding: 50px;
+    
+}
+
+/* Style for the video container */
+.video-container {
     margin-bottom: 30px;
+}
+
+/* Style for the video title */
+.video-container h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Style for the video player */
+video {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Responsive styling for video containers */
+@media screen and (min-width: 768px) {
+    .video-container {
+        display: inline-block;
+        width: calc(50% - 30px);
+        margin: 15px;
+        text-align: left;
+    }
+}
+
+
+
+/* Service section */
+#service {
+    padding: 50px 0;
+}
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .exam-section {
@@ -282,7 +362,7 @@ footer {
 
 .exam-item {
     text-align: center;
-    flex: 0 0 45%; /* Adjust width of each exam item */
+    flex: 0 0 calc(50% - 20px); /* Adjust width of each exam item */
     margin-bottom: 30px;
 }
 
@@ -299,7 +379,7 @@ footer {
 }
 
 .exam-buttons button {
-    background-color: rgb(253, 95, 0);
+    background-color: #333;
     color: #fff;
     padding: 10px 20px;
     margin: 0 10px;
@@ -310,60 +390,29 @@ footer {
 }
 
 .exam-buttons button:hover {
-    background-color: green;
-}
- hr{
-color: rgb(13, 17, 40);
-height: 1rem;
-background-color: rgb(13, 17, 40);
-margin: 5rem;
- }
-
- #frontage {
-    /* Set the background image */
-    background-image: url(img/background.jpg);
-    
-    /* Set background size to cover the entire section */
-    background-size: cover;
-    
-    /* Set background position to center */
-    background-position: center;
-    
-    /* Add some padding for better readability */
-    padding: 50px;
-    
-    /* Add additional styles as needed */
-    background-attachment: fixed;
-    
-    /* Set height to 100vh for full viewport height */
-    height: 100vh;
-     /* Set the background image with linear gradient overlay */
-     background-image: linear-gradient(rgba(253, 97, 0, 0.801), rgba(13, 17, 40, 0.801)), url(img/background.jpg);
-    
-     /* Set background size to cover the entire section */
-     background-size: cover;
-     
-     /* Set background position to center */
-     background-position: center;
-     
-     /* Set background attachment to fixed to keep the image fixed while scrolling */
-     background-attachment: fixed;
-     
-     /* Set height to 100vh for full viewport height */
-     height: 100vh;
+    background-color: #555;
 }
 
-/* Additional styles for the content inside the #fontage section */
-#frontage h2 {
-    color: white; /* Example text color */
-}
-#frontage p {
-    color: white; /* Example text color */
+/* Media query for all screens */
+@media screen {
+    /* Add styles for all screens here */
 }
 
+/* Media query for mobile phones of all sizes */
+@media screen and (max-width: 767px) {
+    .logo {
+        font-size: 24px;
+    }
 
-.span{
-    color: rgb(13, 17, 40);
-    font-size: large;
-    font-weight: bold;
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .exam-item {
+        flex: 0 0 100%;
+    }
 }

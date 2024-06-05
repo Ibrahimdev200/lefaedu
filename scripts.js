@@ -26,3 +26,4 @@ function redirectToWhatsApp(service) {
     // Redirect to the corresponding WhatsApp link based on the service
     window.location.href = whatsappLinks[service];
 }
+
