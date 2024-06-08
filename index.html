@@ -9,62 +9,74 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    
-    <!-- Add any additional stylesheets or scripts here -->
 </head>
 <body>
+    <!-- Header Section -->
     <header> 
-        <div class="logo">LeraEdu</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="video.html">Resouce Videos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <a href="index.html" id="logo-link">
+            <img src="img/logo2.png" alt="Logo" id="logo">
+        </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="video.html">Videos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Frontage Section -->
     <section id="frontage" class="frontage-section"> 
         <div class="container">
             <div class="center-text">
-                <h1>Welcome to Your Lerafin Education Center</h1>
-                <p>Explore our educational Resouces and software downloads.</p>
+                <h1>Welcome to Your Lerafin Education HUB</h1>
+                <p>Explore our educational resources and software downloads.</p>
             </div>
         </div>
+        <section id="download">
+            <div class="container">
+                <div class="download-buttons">
+                    <a href="#download" class="btn">Download Software</a>
+                </div>
+            </div>
+        </section>
     </section>
 
-      <!-- Download button section -->
-      <section id="download">
+    <!-- Download Section -->
+    <section id="download">
         <div class="container">
             <h2>Download Our Software</h2>
             <div class="download-buttons">
-                <a href="#" class="btn">Download CBT Exam Creator (For Schools)</a>
-                <a href="#" class="btn">Download CBT Practice (For Students)</a>
+                <a href="downloads/cbt_exam_creator.zip" class="btn">Download CBT Exam Creator (For Schools)</a>
+                <a href="downloads/cbt_practice.zip" class="btn">Download CBT Practice (For Students)</a>
             </div>
         </div>
     </section>
 
+    <!-- Partners Section -->
     <section id="partners">
-        <h2>Our Partners</h2>
-        <div class="partner-logos">
-            <!-- Insert partner logos here -->
-            <img src="img/jamb-removebg-preview.png" alt="JAMB">
-            <img src="img/neco-removebg-preview.png" alt="neco">
-            <img src="img/waec-removebg-preview.png" alt="WAEC">
-            <img src="img/subon it plain.png" alt="subon.com.ng" >
-            <!-- Add more partner logos as needed -->
+        <div class="container">
+            <h2>Our Partners</h2>
+            <div class="partner-logos">
+                <img src="img/jamb-removebg-preview.png" alt="JAMB">
+                <img src="img/neco-removebg-preview.png" alt="NECO">
+                <img src="img/waec-removebg-preview.png" alt="WAEC">
+                <img src="img/subon it white.png" alt="SUBON.com.ng">
+            </div>
         </div>
     </section>
 
+    <!-- Footer Section -->
     <footer>
         <div class="container">
             <p>&copy; 2024 LERAFIN EDUCATION. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Add any additional scripts here -->
+    <script src="scripts.js"></script>
 </body>
 </html>

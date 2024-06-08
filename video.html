@@ -12,59 +12,64 @@
 </head>
 <body>
     <header>
+        <div class="logo">LeraEdu</div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <nav>
-            <div class="logo">LeraEdu</div>
             <ul>
-                
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="service.html">Services</a></li>
-                <li><a href="video.html">Resource Videos</a></li>
+                <li><a href="video.html">Videos</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="videos">
-        <!-- Video 1: What is CBT Software -->
-        <div class="video-container">
-            <h3>1. What is CBT Software</h3>
-            <video controls>
-                <source src="video/RESPECTFUL-BOYFRIEND.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
-        <!-- Video 2: What is CBT Exam Creator -->
-        <div class="video-container">
-            <h3>2. What is CBT Exam Creator</h3>
-            <video controls>
-                <source src="video/RESPECTFUL-BOYFRIEND.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
-        <!-- Video 3: What is CBT Exam Practice -->
-        <div class="video-container">
-            <h3>3. What is CBT Exam Practice</h3>
-            <video controls>
-                <source src="video/RESPECTFUL-BOYFRIEND.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
-        <!-- Video 4: About Other Services -->
-        <div class="video-container">
-            <h3>4. About Other Services</h3>
-            <video controls>
-                <source src="video/RESPECTFUL-BOYFRIEND.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+    <section id="video" class="video-section">
+        <div class="container">
+            <h2>Our Videos</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                    <video controls>
+                        <source src="path/to/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>What is CBT Software?</h3>
+                    <p>An introduction to Computer-Based Testing software and its benefits for educational institutions.</p>
+                </div>
+                <div class="video-item">
+                    <video controls>
+                        <source src="path/to/video2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>About CBT Exam Creator</h3>
+                    <p>Learn about the features and advantages of our CBT Exam Creator software.</p>
+                </div>
+                <div class="video-item">
+                    <video controls>
+                        <source src="path/to/video3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>CBT Exam Practice</h3>
+                    <p>Discover how our CBT Exam Practice tool can help students prepare effectively for their exams.</p>
+                </div>
+                <div class="video-item">
+                    <video controls>
+                        <source src="path/to/video4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>About Our Service</h3>
+                    <p>Explore the range of services we offer to enhance educational experiences and streamline processes.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 LERAFIN EDUCATION. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 LERAFIN EDUCATION. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="scripts.js"></script>

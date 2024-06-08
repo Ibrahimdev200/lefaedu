@@ -13,20 +13,23 @@
 <body>
     <header>
         <div class="logo">LeraEdu</div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <nav>
-            
             <ul>
                 <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="video.html">Resouce Videos</a></li>
-                    <li><a href="contact.html">Contact</a></li></ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="video.html">Videos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section id="service">
+    <section id="service" class="service-section">
         <div class="container">
-            <h2 class="heading">Unlock exam success with our expert guidance. Purchase your exam token today and start practicing for your next triumph.</h2>
+            <h2>Unlock Exam Success with Our Expert Guidance</h2>
+            <p>Purchase your exam token today and start practicing for your next triumph.</p>
             <div class="exam-section">
                 <div class="exam-item">
                     <img src="img/waec-removebg-preview.png" alt="WAEC" class="exam-image">
@@ -61,7 +64,9 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 LERAFIN EDUCATION. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 LERAFIN EDUCATION. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="scripts.js"></script>
